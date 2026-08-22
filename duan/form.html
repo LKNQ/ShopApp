@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="formstyles.css" />
+    </head>
+    <body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <nav class="navbar bg-primary sticky-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand z-3" href="index.html"">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        class="bi bi-truck"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+                        /></svg
+                    >Marketplace
+                </a>
+                <form class="d-flex" role="search">
+                    <input
+                        class="form-control search-bar me-2 z-3"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button
+                        type="button"
+                        class="btn btn-outline-primary z-3"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+                <div
+                    class="btn-group z-0"
+                    role="group"
+                    aria-label="Basic example"
+                >
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-primary">
+                        Sign Up
+                    </button>
+                </div>
+                <button type="button" class="btn btn-primary cart">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-cart-dash"
+                        viewBox="0 0 16 16"
+                    >
+                        <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                        <path
+                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                        /></svg
+                    >Cart
+                </button>
+            </div>
+        </nav>
+    <form class="form">
+        <label for="name" class="form-label">Name</label>
+        <div class="row">
+        <div class="col mb-3">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+        </div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <label for="phonenumber" class="form-label mb-3">Phone Number</label>
+        <div class="input-group mb-3">
+
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Australia (+61)</a></li>
+                <li><a class="dropdown-item" href="#">Brazil (+55)</a></li>
+                <li><a class="dropdown-item" href="#">Canada (+1)</a></li>
+                <li><a class="dropdown-item" href="#">China (+86)</a></li>
+                <li><a class="dropdown-item" href="#">France (+33)</a></li>
+                <li><a class="dropdown-item" href="#">Germany (+49)</a></li>
+                <li><a class="dropdown-item" href="#">India (+91)</a></li>
+                <li><a class="dropdown-item" href="#">Indonesia (+62)</a></li>
+                <li><a class="dropdown-item" href="#">Italy (+39)</a></li>
+                <li><a class="dropdown-item" href="#">Japan (+81)</a></li>
+                <li><a class="dropdown-item" href="#">Malaysia (+60)</a></li>
+                <li><a class="dropdown-item" href="#">Mexico (+52)</a></li>
+                <li><a class="dropdown-item" href="#">Netherlands (+31)</a></li>
+                <li><a class="dropdown-item" href="#">New Zealand (+64)</a></li>
+                <li><a class="dropdown-item" href="#">Philippines (+63)</a></li>
+                <li><a class="dropdown-item" href="#">Russia (+7)</a></li>
+                <li><a class="dropdown-item" href="#">Singapore (+65)</a></li>
+                <li><a class="dropdown-item" href="#">South Korea (+82)</a></li>
+                <li><a class="dropdown-item" href="#">Spain (+34)</a></li>
+                <li><a class="dropdown-item" href="#">Sweden (+46)</a></li>
+                <li><a class="dropdown-item" href="#">Switzerland (+41)</a></li>
+                <li><a class="dropdown-item" href="#">Thailand (+66)</a></li>
+                <li><a class="dropdown-item" href="#">Türkiye (+90)</a></li>
+                <li><a class="dropdown-item" href="#">United Arab Emirates (+971)</a></li>
+                <li><a class="dropdown-item" href="#">United Kingdom (+44)</a></li>
+                <li><a class="dropdown-item" href="#">United States (+1)</a></li>
+                <li><a class="dropdown-item" href="#">Vietnam (+84)</a></li>
+            </ul>
+            <input type="number" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+        <div class="mb-3">
+            <label for="productname" class="form-label">Product Name</label>
+            <input type="tex" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="productdesc" class="form-label">Product Description</label>
+            <input type="tex" class="form-control productdesc" id="exampleInputPassword1">
+        </div>
+        <label for="productdesc" class="form-label mb-3">Product Image</label>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Upload Image</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>

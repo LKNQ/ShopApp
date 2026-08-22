@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        fill="currentColor"
+                        class="bi bi-truck"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+                        /></svg
+                    >Marketplace
+                </a>
+                <a class="btn btn-primary submitproduct z-3" href="form.html" role="button">Submit Product</a>
+                <form class="d-flex" role="search">
+                    <input
+                        class="form-control me-2 z-3 navbar-form"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                    <button
+                        type="button"
+                        class="btn btn-outline-primary z-3 navbar-form"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+                <div
+                    class="btn-group z-0"
+                    role="group"
+                    aria-label="Basic example"
+                >
+                    <button type="button" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-primary">
+                        Sign Up
+                    </button>
+                </div>
+                <button type="button" class="btn btn-primary cart">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-cart-dash"
+                        viewBox="0 0 16 16"
+                    >
+                        <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z" />
+                        <path
+                            d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"
+                        /></svg
+                    >Cart
+                    </span>
+                </button>
+            </div>
+        </nav>
+        <div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/714VRmqcVmL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+                            class="card-img-top"
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">5,240,638 VND</h5>
+                            <p class="card-text">
+                                Lenovo Idea Tab - College Tablet - 11″ 2.5K IPS
+                                Touchscreen Display - 90Hz - MediaTek Dimensity
+                                6300-8 GB Memory - 256 GB Storage - Integrated
+                                Arm Mali-G57 MC2 - Tab Pen and Folio Case
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61jEU25zSaL._AC_SX466_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">7,600,000 VND</h5>
+                            <p class="card-text">
+                                ASUS Chromebook Flip CX1 Convertible Laptop, 14"
+                                FHD NanoEdge 360-degree Touchscreen, Intel
+                                Celeron N4500 Processor, 128GB eMMC Storage, 8GB
+                                RAM, ChromeOS, Transparent Silver,
+                                CX1400FKA-AS88FT
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/81wOCABev4L._AC_SX679_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">3,929,103 VND</h5>
+                            <p class="card-text">
+                                Ninja Flip Toaster Oven & Air Fryer, 8-in-1,
+                                Stainless Steel, SP151 | Air fry, bake, broil,
+                                toast, bagel, dehydrate, reheat, 1800W, Flip up
+                                & away, XL capacity
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61E5+Tg-R9L._AC_SY300_SX300_QL70_FMwebp_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">1,047,656 VND</h5>
+                            <p class="card-text">
+                                EHEYCIGA Orthopedic Extra Large Dog Bed,
+                                Waterproof Washable XL Pet Bed 44" | Non-Slip
+                                Bottom and Egg-Crate Polyurethane Foam Big Dog
+                                Couch Bed with Washable Removable Cover, Grey
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71gkCf-Lo8L._AC_SX679_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">1,834,053 VND</h5>
+                            <p class="card-text">
+                                Instant Pot 4QT RIO Mini 7-in-1 Multi-Cooker,
+                                Pressure Cooker, Slow cook, Sauté, Steam, Rice
+                                Maker, Yogurt, & Warmer, Black, 4 Quarts
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/91OCGfS83WL._AC_SX466_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">706,997 VND</h5>
+                            <p class="card-text">
+                                SUNLU Silk PLA+ Filament 1.75mm Multicolor
+                                250gx4, Silky Glossy PLA Plus 3D Printer
+                                Filament Bundle for Bambu Lab 3D Printers, Red
+                                Gold+Blue Green+Red Blue+Green Purple
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71X7xo149gL._AC_SX342_SY445_QL70_FMwebp_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">6,367,169 VND</h5>
+                            <p class="card-text">
+                                EUHOMY Countertop Dishwasher Portable, 6
+                                Programs with 40 dB, No Hookup | 6 Programs
+                                (Normal, ECO, Quick, Baby Care/Strong, Fruit,
+                                Dry), Dual Spray Arms, 360° Coverage, for 30+
+                                Items, 73h Ventilation
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71bDdiCbWmL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">7,861,088 VND</h5>
+                            <p class="card-text">
+                                Lenovo Idea Tab Pro with Google Gemini - Student
+                                Tablet - 12.7” 3K LCD Display - 8 GB Memory -
+                                128 GB Storage - MediaTek Dimensity 8300 -
+                                Includes Pen and Folio Case
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img
+                            src="https://m.media-amazon.com/images/I/61qA3mYPhQL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">706,997 VND</h5>
+                            <p class="card-text">
+                                ASUS Vivobook Go 15 15.6” FHD 60Hz Laptop with
+                                Intel Processor N150, Intel UHD Graphics, 4GB
+                                RAM, 128GB SSD, Mixed Black
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto"
+                                >View Product</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
