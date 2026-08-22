@@ -1,0 +1,28 @@
+.colored-section {
+    background-color: #ff4c68;
+}
+.big-heading {
+    font-family: "Sedgwick Ave", cursive;
+    color: white;
+}
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 32px;
+    margin-left: 216px;
+    margin-top: 38px;
+}
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 235px; 
+    font-family: "Ubuntu";
+    margin-top: 37px;
+    font-size: 19px;
+    align-items: right;
+}
+.nav-link {
+    margin-left: 36px;
+}
+.title-image {
+    transform: rotate(25deg);
+    width: 300px;
+}

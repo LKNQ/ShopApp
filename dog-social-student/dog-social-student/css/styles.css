@@ -1,0 +1,302 @@
+/* =========================================================
+   DOG SOCIAL – STUDENT VERSION
+
+   Quy ước:
+   - Class Bootstrap: tra trong Bootstrap Docs.
+   - Class trong file này: CSS do dự án tự viết.
+   - Không xóa code khi chưa biết phần tử nào bị ảnh hưởng.
+   ========================================================= */
+
+/* =========================================================
+   TODO 12 – PERSONAL THEME
+
+   Thay các màu bên dưới để tạo chủ đề riêng.
+   Sau mỗi lần thay, hãy kiểm tra:
+   - Chữ có còn dễ đọc không?
+   - Button có nổi bật không?
+   - Navbar toggler có nhìn thấy không?
+   ========================================================= */
+
+:root {
+  --brand-color: #ff4c68;
+  --accent-color: #ef8172;
+  --accent-hover-color: #ff4c68;
+  --text-muted-color: #8f8f8f;
+  --light-color: #ffffff;
+  --dark-color: #212529;
+}
+
+/* =========================================================
+   CÀI ĐẶT CHUNG
+   ========================================================= */
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+.colored-section {
+  color: var(--light-color);
+  background-color: var(--brand-color);
+}
+
+.white-section {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.section-description {
+  color: var(--text-muted-color);
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+#title {
+  text-align: left;
+}
+
+.big-heading {
+  margin-bottom: 1.5rem;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.title-image {
+  position: absolute;
+  right: 25%;
+  width: 60%;
+  transform: rotate(25deg);
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 1rem;
+}
+
+.nav-link {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+  font-size: 1rem;
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.feature-icon {
+  color: var(--accent-color);
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/*
+  TODO 13 – HOVER
+
+  Chạy website và quan sát hiệu ứng dưới đây.
+  Sau đó:
+  - Thay đổi scale.
+  - Hoặc đổi màu hover.
+  - Giải thích :hover hoạt động khi nào.
+*/
+
+.feature-icon:hover {
+  color: var(--accent-hover-color);
+  transform: scale(1.1);
+}
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonial-image {
+  width: 10%;
+  min-width: 70px;
+  margin: 1.25rem;
+  border-radius: 50%;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   PRESS
+   ========================================================= */
+
+#press {
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  min-width: 100px;
+  margin: 1.25rem 1.25rem 3rem;
+}
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+#pricing {
+  padding: 6rem 1rem;
+}
+
+.pricing-column {
+  padding: 1rem;
+}
+
+.pricing-card {
+  height: 100%;
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 6px 6px rgba(0, 0, 0, 0.18);
+}
+
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   CALL TO ACTION
+   ========================================================= */
+
+.cta-heading {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.social-link {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+}
+
+.social-link:hover {
+  color: var(--brand-color);
+}
+
+/* =========================================================
+   RESPONSIVE
+
+   TODO 14 – KIỂM TRA RESPONSIVE
+
+   Dùng DevTools hoặc thu nhỏ trình duyệt và kiểm tra:
+   - Navbar
+   - Title
+   - Hình điện thoại
+   - Carousel
+   - Pricing cards
+
+   Không thay breakpoint ngay khi chưa quan sát lỗi.
+   ========================================================= */
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    width: 55%;
+    transform: rotate(0);
+  }
+
+  .testimonial-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-fluid {
+    padding: 8% 7%;
+  }
+
+  .big-heading {
+    font-size: 2.5rem;
+  }
+
+  .title-image {
+    width: 75%;
+  }
+
+  .testimonial-text {
+    font-size: 1.6rem;
+  }
+
+  .press-logo {
+    width: 30%;
+    min-width: 80px;
+  }
+
+  .cta-heading {
+    font-size: 2rem;
+  }
+}

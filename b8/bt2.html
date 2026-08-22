@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- TODO 1: Đặt tiêu đề cho trang web -->
+        <title></title>
+
+        <link rel="stylesheet" href="./css/form.css" />
+    </head>
+
+    <body>
+        <main class="checkout-page">
+            <!--
+            TODO 2:
+            - Thêm action cho form.
+            - Chọn phương thức gửi dữ liệu phù hợp.
+        -->
+            <form class="checkout-form" action="" method="">
+                <div class="form-columns">
+                    <!-- =========================
+                     BILLING ADDRESS
+                ========================== -->
+                    <section class="form-column">
+                        <h2>Billing Address</h2>
+
+                        <!-- Full name -->
+                        <div class="form-group">
+                            <!-- TODO 3: Hoàn thiện thuộc tính for -->
+                            <label for="">Full name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Nguyen Van A"
+                            />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <!-- TODO 5: Liên kết label với input -->
+                            <label for="">Email</label>
+
+                            <!-- TODO 6: Chọn type phù hợp với email -->
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="example@email.com"
+                            />
+                        </div>
+
+                        <!-- Address -->
+                        <div class="form-group">
+                            <label for="">Address</label>
+
+                            <!-- TODO 7: Hoàn thiện trường địa chỉ -->
+                            <input
+                                type="text"
+                                id="address"
+                                name="address
+                                placeholder="123 Nguyen Hue Street"
+                            />
+                        </div>
+
+                        <!-- City -->
+                        <div class="form-group">
+                            <label for="">City</label>
+
+                            <!-- TODO 8: Hoàn thiện trường thành phố -->
+                            <input
+                                type="text"
+                                id="city"
+                                name="city
+                                placeholder="Ho Chi Minh City"
+                            />
+                        </div>
+
+                        <div class="form-row">
+                            <!-- State -->
+                            <div class="form-group">
+                                <label for="">State</label>
+
+                                <!-- TODO 9: Hoàn thiện trường State -->
+                                <input
+                                    type="text"
+                                    id="state"
+                                    name="state"
+                                    placeholder="HCM"
+                                />
+                            </div>
+
+                            <!-- Zip Code -->
+                            <div class="form-group">
+                                <label for="">Zip Code</label>
+
+                                <!-- TODO 10: Chọn type phù hợp -->
+                                <input
+                                    type="number"
+                                    id="zip"
+                                    name="zip"
+                                    placeholder="700000"
+                                />
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- =========================
+                     PAYMENT
+                ========================== -->
+                    <section class="form-column">
+                        <h2>Payment</h2>
+
+                        <p class="payment-label">Card Payment</p>
+
+                        <!-- Name on card -->
+                        <div class="form-group">
+                            <label for="">Name on card</label>
+
+                            <!-- TODO 11: Hoàn thiện trường tên trên thẻ -->
+                            <input
+                                type="text"
+                                id="noc"
+                                name="noc"
+                                placeholder="Nguyen Van A"
+                            />
+                        </div>
+
+                        <!-- Card number -->
+                        <div class="form-group">
+                            <label for="">Credit Card Number</label>
+
+                            <!-- TODO 12: Hoàn thiện trường số thẻ -->
+                            <input
+                                type="number"
+                                id="ccn"
+                                name="ccn"
+                                placeholder="1111222233334444"
+                            />
+                        </div>
+
+                        <!-- Expire month -->
+                        <div class="form-group">
+                            <!-- TODO 13: Hoàn thiện thuộc tính for -->
+                            <label for="">Expire Month</label>
+
+                            <!--
+                            TODO 14:
+                            - Thêm id và name cho select.
+                            - Thêm các option tháng còn thiếu.
+                        -->
+                            <select id="" name="">
+                                <option value="">Choose month</option>
+
+                                <!-- Thêm các tháng tại đây -->
+                                <option value="">January</option>
+                                <option value="">February</option>
+                                <option value="">March</option>
+                                <option value="">April</option>
+                                <option value="">May</option>
+                                <option value="">June</option>
+                                <option value="">July</option>
+                                <option value="">August</option>
+                                <option value="">September</option>
+                                <option value="">October</option>
+                                <option value="">November</option>
+                                <option value="">December</option>
+
+                                <!-- TODO: Thêm các tháng còn lại -->
+                            </select>
+                        </div>
+
+                        <!-- Expire year -->
+                        <div class="form-group">
+                            <label for="exp-year">Expire Year</label>
+
+                            <!--
+                            TODO 15:
+                            - Thêm id và name.
+                            - Thêm các năm phù hợp.
+                        -->
+                            <select id="exp-year" name="exp-year">
+                                <option value="">Choose year</option>
+
+                                <!-- Thêm các năm tại đây -->
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                                <option value="2033">2033</option>
+                                <option value="2034">2034</option>
+                                <option value="2035">2035</option>
+                                <option value="2036">2036</option>
+                                <option value="2037">2037</option>
+                                <option value="2038">2038</option>
+                                <option value="2039">2039</option>
+                                <option value="2040">2040</option>
+                            </select>
+                        </div>
+
+                        <!-- CVV -->
+                        <div class="form-group">
+                            <label for="">CVV</label>
+
+                            <!-- TODO 16: Hoàn thiện trường CVV -->
+                            <input type="number" id="cvv" name="cvv" placeholder="123" />
+                        </div>
+                    </section>
+                </div>
+
+                <!-- TODO 17: Chọn type phù hợp cho nút gửi form -->
+                <button type="">Proceed to Checkout</button>
+            </form>
+        </main>
+    </body>
+</html>
