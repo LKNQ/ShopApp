@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+        <script src="https://files.bpcontent.cloud/2026/11/23/02/20261123023744-9SVSJMFG.js" defer></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
@@ -34,21 +36,6 @@
                         /></svg
                     >Marketplace
                 </a>
-                <form class="d-flex" role="search">
-                    <input
-                        class="form-control search-bar me-2 z-3"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
-                    <button
-                        type="button"
-                        class="btn btn-outline-primary z-3"
-                        type="submit"
-                    >
-                        Search
-                    </button>
-                </form>
                 <div
                     class="btn-group z-0"
                     role="group"
@@ -76,7 +63,7 @@
                 </button>
             </div>
         </nav>
-    <form class="form">
+    <form class="form" id="productForm">
         <label for="name" class="form-label">Name</label>
         <div class="row">
         <div class="col mb-3">
@@ -130,25 +117,29 @@
             </ul>
             <input type="number" class="form-control" aria-label="Text input with dropdown button">
             </div>
-        <div class="mb-3">
-            <label for="productname" class="form-label">Product Name</label>
-            <input type="tex" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3">
-            <label for="productdesc" class="form-label">Product Description</label>
-            <input type="tex" class="form-control productdesc" id="exampleInputPassword1">
-        </div>
-        <label for="productdesc" class="form-label mb-3">Product Image</label>
-        <div class="input-group mb-3">
-            <input type="file" class="form-control" id="inputGroupFile02">
-            <label class="input-group-text" for="inputGroupFile02">Upload Image</label>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">I agree to the terms and conditions</label>
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="mb-3">
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" class="form-control" id="productName" required>
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Price (VND)</label>
+                <input type="number" class="form-control" id="productPrice" min="0" required>
+            </div>
+            <div class="mb-3">
+                <label for="productDesc" class="form-label">Product Description</label>
+                <input type="text" class="form-control productdesc" id="productDesc" required>
+            </div>
+            <label for="productImage" class="form-label mb-3">Product Image</label>
+            <div class="input-group mb-3">
+                <input type="file" class="form-control" id="productImage" accept="image/*" required>
+                <label class="input-group-text" for="productImage">Upload Image</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="agree" required>
+                <label class="form-check-label" for="agree">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </body>
 </html>
