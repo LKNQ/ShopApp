@@ -11,7 +11,7 @@ myProducts.forEach((item) => {
 });
 
 function showProduct(product) {
-    const price = Math.round(product.price * 26000) + " VND";
+    const price = (product.price * 26000) + " VND";
     const category = product.category || "Submitted by user";
 
     let brand = "";

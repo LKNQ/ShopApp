@@ -1,5 +1,8 @@
 const addForm = document.getElementById("productForm");
-
+if (!currentUser) {
+    alert("Please log in to sell a product.");
+    window.location.href = "login.html";
+}
 addForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
