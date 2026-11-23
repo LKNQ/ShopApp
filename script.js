@@ -46,7 +46,8 @@ function updateList() {
 fetch("https://dummyjson.com/products?limit=0")
     .then((response) => response.json())
     .then((data) => {
-        allProducts = data.products;
+        const myProducts = JSON.parse(localStorage.getItem("myProducts")) || [];
+        allProducts = myProducts.concat(data.products);
         updateList();
     })
     .catch((error) => console.error("Lỗi:", error));
