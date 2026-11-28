@@ -69,6 +69,18 @@
         </nav>
         <div>
             <p id="status" class="text-center mt-4"></p>
+            <div class="dropdown ms-3 mt-4">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    Filter
+                </button>
+
+                <div class="dropdown-menu p-3">
+                    <label for="categoryFilter" class="form-label">Categories</label>
+                    <select id="categoryFilter" class="form-select category-filter" multiple size="6">
+                    </select>
+                    <small class="text-muted">Hold Ctrl to select multiple categories.</small>
+                </div>
+            </div>
             <div id="product-grid" class="container-fluid"></div>
         </div>
         <script src="config.js"></script>
