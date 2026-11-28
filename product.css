@@ -2,3 +2,9 @@
     max-height: 400px;
     object-fit: contain;
 }
+.btn-outline-primary {
+    background-color: white;
+}
+body {
+    font-family: "Vietnam Pro", sans-serif;
+}

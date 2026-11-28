@@ -4,7 +4,6 @@
     margin-right: 10px;
 }
 .navbar-brand {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.3vw;
 }
 .btn-outline-primary {
@@ -43,13 +42,13 @@
     border: none;
     width: 100%;
 }
-.card-text {
-    font-weight: bold;
-}
 .card-title {
     font-weight: bold;
 }
 .submitproduct {
     margin-left: 12vw;
     position: absolute;
+}
+body {
+    font-family: "Vietnam Pro", sans-serif;
 }

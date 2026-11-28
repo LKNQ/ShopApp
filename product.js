@@ -12,7 +12,7 @@ myProducts.forEach((item) => {
 
 function showProduct(product) {
     const price = (product.price * 26000) + " VND";
-    const category = product.category || "Submitted by user";
+    const category = product.category. || "Submitted by user";
 
     let brand = "";
     if (product.brand) {

@@ -9,8 +9,9 @@ addForm.addEventListener("submit", function (event) {
     const name = document.getElementById("productName").value;
     const priceVND = document.getElementById("productPrice").value;
     const description = document.getElementById("productDesc").value;
+    const category = document.getElementById("productCategory").value.trim();
     const file = document.getElementById("productImage").files[0];
-
+    
     if (!file) {
         alert("Please choose an image.");
         return;
@@ -25,12 +26,13 @@ addForm.addEventListener("submit", function (event) {
 
     reader.onload = function () {
         const products = JSON.parse(localStorage.getItem("myProducts")) || [];
-
+        
         products.push({
             id: Date.now(),
             title: name,
             price: priceVND / 26000,
             description: description,
+            category: category,
             thumbnail: reader.result,
         });
 
